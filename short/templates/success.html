@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Pin-ly</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="http://getbootstrap.com/examples/cover/cover.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap" rel="stylesheet">
+    <link href="{% static 'index2.css' %}" rel="stylesheet">
+</head>
+<body>
+    <h1>Pin-ly | Short URL Service</h1>
+    <div class="jumbotron" id="div">
+        <p style="font-size: 1.8em;">
+            Thank You for using our services &#129321;
+        </p>
+        <div class="jumbotron" id="div">
+            <p>Count - {{count}}</p>
+            <p>Original URL - <input type="text" value="{{url}}" id="SI" readonly></p>
+            <p>Shorter URL &nbsp;- <input type="text" value="{{shortcode}}" id="SI" readonly></p>
+        </div>
+    </div>
+</body>
+</html>

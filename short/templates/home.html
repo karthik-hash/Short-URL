@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Pin-ly</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="http://getbootstrap.com/examples/cover/cover.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap" rel="stylesheet">
+    <link href="{% static 'index1.css' %}" rel="stylesheet">
+</head>
+<body>
+    <h1>Pin-ly | Short URL Service</h1>
+    <div class="jumbotron" id="div">
+        <p style="font-size: 1.8em;">Pin-ly is an URL Shortener Service. This can be mainly used for three purposes.</p>
+        <ul>
+            <li>Link Masking.</li>
+            <li>Shortening a lengthy domain.</li>
+            <li>Track how many people click on specific link.</li>
+        </ul>
+        <form action="{% url 'my_function' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h4>Give Original URL here.</h4>
+            <input type="text" name="url" class="form-control" id="SI" placeholder="Long URL" required autocomplete="off">
+            <input class='btn btn-primary' type='submit' value='Shorten &raquo;' id="PI">
+        </form>
+    </div>
+</body>
+</html>
