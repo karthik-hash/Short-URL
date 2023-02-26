@@ -16,4 +16,4 @@ Developed to shorten URL using Django framework
  Now the website is hosted. We can access it from browser at http://127.0.0.1:8000/
 
 ## Screenshot
-![Screenshot](https://github.com/karthik-hash/Online-Compiler-Using-Django/blob/master/Screenshot.png)
+![Screenshot](https://github.com/karthik-hash/Short-URL/blob/main/Home.png?raw=true)
