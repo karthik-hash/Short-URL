@@ -17,3 +17,4 @@ Developed to shorten URL using Django framework
 
 ## Screenshot
 ![Screenshot](https://github.com/karthik-hash/Short-URL/blob/main/Home.png?raw=true)
+![Screenshot](https://github.com/karthik-hash/Short-URL/blob/main/Shorten.png?raw=true)
